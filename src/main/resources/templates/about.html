@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8" />
+	<title>About</title>
+</head>
+
+<body>
+	<h1>Hello My name is Aryan...</h1>
+	<h1>My name is <span th:text="${ #strings.toUpperCase(name) }"></span></h1>
+	<h1>Current date is <span th:text="${currentDate}"></span></h1>
+
+	<div th:with="a=5,b=10,n=${name}">
+		<h1 th:text="${a}"></h1>
+	</div>
+</body>
+
+</html>
